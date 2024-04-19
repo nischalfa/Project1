@@ -1,0 +1,13 @@
+{
+  "guitars|4": [
+    {
+      "id|+1": 1,
+      "brand": "{{company()}}",
+      "model": "{{lorem(1, 'words')}} {{random(1000, 9999)}}",
+      "type": "{{random('Acoustic', 'Electric')}}",
+      "price": "{{integer(500, 5000)}}",
+      "color": "{{random('Red', 'Blue', 'Black', 'White', 'Sunburst')}}",
+      "image": "https://example.com/{{random('guitar1.jpg', 'guitar2.jpg', 'guitar3.jpg')}}"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+/* Product.css */
+
+/* Style for navigation */
+.nav {
+  background-color: lightgray;
+  padding: 20px;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Style for main content */
+main {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+/* Style for guitar grid */
+.guitar-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Style for individual guitar card */
+.guitar-card {
+  width: 45%;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.guitar-card img {
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.guitar-info {
+  padding: 10px 0;
+}
+
+.guitar-info h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.guitar-info p {
+  margin: 5px 0;
+}
+
+/* Style for search input */
+input[type="text"] {
+  padding: 5px;
+  width: 200px;
+}
+
+ul :hover {
+  background-color: beige;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Products {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.addtocart {
+  padding: 10px 12px;
+  outline: none;
+  border: none;
+  background-color: #95a5a6;
+  cursor: pointer;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  font-weight: bold;
+  color: white;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.shopping-cart {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  padding-right: 200px;
+}
+
+.added-products {
+  position: fixed;
+  z-index: 300;
+  height: 500px;
+  width: 200px;
+  top: 70px;
+  right: 0px;
+  background-color: #95afc0;
+  transform: translateX(100%);
+  transition: all 0.5s;
+  padding: 10px 12px;
+}
+
+.added-products i {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+}
+
+.show-added-products {
+  transform: translateX(0%);
+}
+
+.added-products-info-img {
+  height: 30px;
+  width: 30px;
+  margin: 10px 12px;
+}
+
+.Quantity {
+  height: 20px;
+  width: 50px;
+  padding: 1px 1px;
+  text-align: center;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+  margin: 0px 14px;
+}
+
+/*.Removebtn {
+  padding: 2px 7px;
+  cursor: pointer;
+  color: tomato;
+  font-weight: bold;
+}*/
+
+.products-description {
+  padding: 16px 12px;
+  text-align: justify;
+}
